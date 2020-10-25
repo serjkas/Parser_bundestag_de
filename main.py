@@ -14,6 +14,9 @@ result = q.content
 soup = BeautifulSoup(result, 'lxml')
 persons = soup.find_all(class_='bt-open-in-overlay')
 
+
+
+
 for each in persons:
     person_page_url = each.get('href')
     persons_url_list.append(person_page_url)
